@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Isian</title>
+  </head>
+  <body>
+    <h1>Isi Formulirnya</h1>
+    <form action="#" method="post">
+      <div>
+        <label for="">Nama Lengkap</label>
+        <input type="text" placeholder="Nama" />
+      </div>
+
+      <div>
+        <label for="">Email</label>
+        <input type="email" placeholder="Email" />
+      </div>
+
+      <div>
+        <label for="">Password</label>
+        <input type="password" placeholder="Password" />
+      </div>
+
+      <div>
+        <label for="">Phone</label>
+        <input type="number" placeholder="Phone" />
+      </div>
+
+      <div>
+        <label for="">Color</label>
+        <input type="color" placeholder="Color" />
+      </div>
+    </form>
+
+    <h1>Pesanan</h1>
+    <form action="/order">
+      <label for="">Baju</label>
+      <div>
+        <input type="radio" name="baju" id="" value="kemeja" checked />
+        <label for="">Kemeja</label>
+        <input type="radio" name="baju" id="" value="kaos" />
+        <label for="">Kaos</label>
+      </div>
+
+      <div>
+        <label for="ukuran">Ukuran</label>
+        <select name="ukuran" id="ukuran">
+          <option>-</option>
+          <option value="s">Small</option>
+          <option value="m" selected>Medium</option>
+          <option value="l">Large</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="term">Sesuai Pesanan</label>
+        <input type="checkbox" name="term" id="term" value="benar" checked />
+      </div>
+
+      <div>
+        <label for="notes">Catatan</label>
+        <textarea name="notes" id="notes" cols="20" rows="10"></textarea>
+      </div>
+
+      <button type="submit">Order</button>
+    </form>
+
+    <h1>Validasi</h1>
+    <form action="">
+      <input
+        type="text"
+        name="valid"
+        id="valid"
+        required
+        minlength="3"
+        maxlength="9"
+      />
+
+      <input type="number" name="number" id="number" required min="2" max="6" />
+    </form>
+  </body>
+</html>
